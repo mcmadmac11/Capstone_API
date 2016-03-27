@@ -22,5 +22,6 @@ namespace DocuStoreAPI.Models
         public System.Data.Entity.DbSet<DocuStoreAPI.Models.Document> Documents { get; set; }
 
         public System.Data.Entity.DbSet<DocuStoreAPI.Models.Member> Members { get; set; }
+        public DbSet<File> Files { get; set; }
     }
 }

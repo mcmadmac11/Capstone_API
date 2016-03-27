@@ -19,5 +19,15 @@ namespace DocuStoreAPI.Models
         [EmailAddress(ErrorMessage = "Invalid Email Address")]
         public string Email { get; set; }
 
+        [Display(Name = "Full Name")]
+        public string FullName
+        {
+            get
+            {
+                return LastName + ", " + FirstName;
+            }
+        }
+        public virtual ICollection<File> Files { get; set; }
+
     }
 }

@@ -5,6 +5,10 @@ VisualStudioVersion = 14.0.24720.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DocuStoreAPI", "DocuStoreAPI\DocuStoreAPI.csproj", "{179CFF10-D1C9-45D6-9E02-BFBB4B14C11E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DocuStore.Web", "DocuStore.Web\DocuStore.Web.csproj", "{2FEB089D-0AA3-4A72-BF0A-547D3D582F39}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DocuStore.Android", "DocuStore.Android\DocuStore.Android.csproj", "{AC93C6A8-CA59-4EB3-88F5-7583A012F1EB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,16 @@ Global
 		{179CFF10-D1C9-45D6-9E02-BFBB4B14C11E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{179CFF10-D1C9-45D6-9E02-BFBB4B14C11E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{179CFF10-D1C9-45D6-9E02-BFBB4B14C11E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2FEB089D-0AA3-4A72-BF0A-547D3D582F39}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2FEB089D-0AA3-4A72-BF0A-547D3D582F39}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2FEB089D-0AA3-4A72-BF0A-547D3D582F39}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2FEB089D-0AA3-4A72-BF0A-547D3D582F39}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AC93C6A8-CA59-4EB3-88F5-7583A012F1EB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AC93C6A8-CA59-4EB3-88F5-7583A012F1EB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AC93C6A8-CA59-4EB3-88F5-7583A012F1EB}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{AC93C6A8-CA59-4EB3-88F5-7583A012F1EB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AC93C6A8-CA59-4EB3-88F5-7583A012F1EB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AC93C6A8-CA59-4EB3-88F5-7583A012F1EB}.Release|Any CPU.Deploy.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
