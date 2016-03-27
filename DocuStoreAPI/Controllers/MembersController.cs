@@ -9,13 +9,14 @@ using System.Net.Http;
 using System.Threading.Tasks;
 using System.Web.Http;
 using System.Web.Http.Description;
-using DocuStoreAPI.Models;
+using DocuStoreAPI.Data.Models;
+using DocuStoreAPI.Data;
 
 namespace DocuStoreAPI.Controllers
 {
     public class MembersController : ApiController
     {
-        private DocuStoreAPIContext db = new DocuStoreAPIContext();
+        private DocuStoreDBContext db = new DocuStoreDBContext();
 
         // GET: api/Members
         public IQueryable<Member> GetMembers()

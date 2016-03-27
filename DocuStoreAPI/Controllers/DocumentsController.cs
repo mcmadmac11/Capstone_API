@@ -15,105 +15,105 @@ namespace DocuStoreAPI.Controllers
 {
     public class DocumentsController : ApiController
     {
-        private DocuStoreAPIContext db = new DocuStoreAPIContext();
+        //private DocuStoreDBContext db = new DocuStoreDBContext();
 
-        // GET: api/Documents
-        public IQueryable<Document> GetDocuments()
-        {
-            return db.Documents;
-        }
+        //// GET: api/Documents
+        //public IQueryable<Document> GetDocuments()
+        //{
+        //    return db.Documents;
+        //}
 
-        // GET: api/Documents/5
-        [ResponseType(typeof(Document))]
-        public async Task<IHttpActionResult> GetDocument(int id)
-        {
-            Document document = await db.Documents.FindAsync(id);
-            if (document == null)
-            {
-                return NotFound();
-            }
+        //// GET: api/Documents/5
+        //[ResponseType(typeof(Document))]
+        //public async Task<IHttpActionResult> GetDocument(int id)
+        //{
+        //    Document document = await db.Documents.FindAsync(id);
+        //    if (document == null)
+        //    {
+        //        return NotFound();
+        //    }
 
-            return Ok(document);
-        }
+        //    return Ok(document);
+        //}
 
-        // PUT: api/Documents/5
-        [ResponseType(typeof(void))]
-        public async Task<IHttpActionResult> PutDocument(int id, Document document)
-        {
-            if (!ModelState.IsValid)
-            {
-                return BadRequest(ModelState);
-            }
+        //// PUT: api/Documents/5
+        //[ResponseType(typeof(void))]
+        //public async Task<IHttpActionResult> PutDocument(int id, Document document)
+        //{
+        //    if (!ModelState.IsValid)
+        //    {
+        //        return BadRequest(ModelState);
+        //    }
 
-            if (id != document.Id)
-            {
-                return BadRequest();
-            }
+        //    if (id != document.Id)
+        //    {
+        //        return BadRequest();
+        //    }
 
-            db.Entry(document).State = EntityState.Modified;
+        //    db.Entry(document).State = EntityState.Modified;
 
-            try
-            {
-                await db.SaveChangesAsync();
-            }
-            catch (DbUpdateConcurrencyException)
-            {
-                if (!DocumentExists(id))
-                {
-                    return NotFound();
-                }
-                else
-                {
-                    throw;
-                }
-            }
+        //    try
+        //    {
+        //        await db.SaveChangesAsync();
+        //    }
+        //    catch (DbUpdateConcurrencyException)
+        //    {
+        //        if (!DocumentExists(id))
+        //        {
+        //            return NotFound();
+        //        }
+        //        else
+        //        {
+        //            throw;
+        //        }
+        //    }
 
-            return StatusCode(HttpStatusCode.NoContent);
-        }
+        //    return StatusCode(HttpStatusCode.NoContent);
+        //}
 
-        // POST: api/Documents
-        [ResponseType(typeof(Document))]
-        public async Task<IHttpActionResult> PostDocument(Document document)
-        {
-            if (!ModelState.IsValid)
-            {
-                return BadRequest(ModelState);
-            }
+        //// POST: api/Documents
+        //[ResponseType(typeof(Document))]
+        //public async Task<IHttpActionResult> PostDocument(Document document)
+        //{
+        //    if (!ModelState.IsValid)
+        //    {
+        //        return BadRequest(ModelState);
+        //    }
 
-            db.Documents.Add(document);
-            await db.SaveChangesAsync();
+        //    db.Documents.Add(document);
+        //    await db.SaveChangesAsync();
 
-            return CreatedAtRoute("DefaultApi", new { id = document.Id }, document);
-        }
+        //    return CreatedAtRoute("DefaultApi", new { id = document.Id }, document);
+        //}
 
-        // DELETE: api/Documents/5
-        [ResponseType(typeof(Document))]
-        public async Task<IHttpActionResult> DeleteDocument(int id)
-        {
-            Document document = await db.Documents.FindAsync(id);
-            if (document == null)
-            {
-                return NotFound();
-            }
+        //// DELETE: api/Documents/5
+        //[ResponseType(typeof(Document))]
+        //public async Task<IHttpActionResult> DeleteDocument(int id)
+        //{
+        //    Document document = await db.Documents.FindAsync(id);
+        //    if (document == null)
+        //    {
+        //        return NotFound();
+        //    }
 
-            db.Documents.Remove(document);
-            await db.SaveChangesAsync();
+        //    db.Documents.Remove(document);
+        //    await db.SaveChangesAsync();
 
-            return Ok(document);
-        }
+        //    return Ok(document);
+        //}
 
-        protected override void Dispose(bool disposing)
-        {
-            if (disposing)
-            {
-                db.Dispose();
-            }
-            base.Dispose(disposing);
-        }
+        //protected override void Dispose(bool disposing)
+        //{
+        //    if (disposing)
+        //    {
+        //        db.Dispose();
+        //    }
+        //    base.Dispose(disposing);
+        //}
 
-        private bool DocumentExists(int id)
-        {
-            return db.Documents.Count(e => e.Id == id) > 0;
-        }
+        //private bool DocumentExists(int id)
+        //{
+        //    return db.Documents.Count(e => e.Id == id) > 0;
+        //}
     }
 }

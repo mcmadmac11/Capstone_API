@@ -2,10 +2,10 @@
 using System.Collections.Generic;
 using System.Data.Entity;
 using System.Linq;
-using System.Web;
-using DocuStoreAPI.Data;
+using System.Text;
+using System.Threading.Tasks;
 
-namespace DocuStoreAPI.Models
+namespace DocuStoreAPI.Data.Models
 {
     public class DocuStoreDBContext : DbContext
     {
@@ -20,9 +20,9 @@ namespace DocuStoreAPI.Models
         {
         }
 
-        public System.Data.Entity.DbSet<DocuStoreAPI.Models.Document> Documents { get; set; }
 
-        public System.Data.Entity.DbSet<DocuStoreAPI.Data.Member> Members { get; set; }
-        public DbSet<DocuStoreAPI.Data.File> Files { get; set; }
+        public DbSet<Member> Members { get; set; }
+        public DbSet<File> Files { get; set; }
+
     }
 }
