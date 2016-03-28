@@ -1,0 +1,14 @@
+
+MOBIL APP
+Website + Mobil App.
+
+upload documents from file/picture
+view documents
+nice UI
+easily select document to view
+Single-User experience
+Security is a must
+
+Azure Resources for DocuStoreApI:
+URL: docustoreapi.azurewebsites.net
+ConnectionStrings: ("DefaultConnection") Data Source=tcp:docuserver.database.windows.net,1433;Initial Catalog=DocuStoreAPI_db;User Id=mcmanusd@docuserver;Password=#Rmm8voub

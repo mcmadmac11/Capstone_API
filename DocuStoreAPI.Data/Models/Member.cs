@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace DocuStoreAPI.Data
 {
-    public class Member
+    public class Member 
     {
         public int Id { get; set; }
         [Display(Name = "First Name")]

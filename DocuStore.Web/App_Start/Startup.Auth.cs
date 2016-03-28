@@ -58,11 +58,11 @@ namespace DocuStore.Web
             //   appId: "",
             //   appSecret: "");
 
-            //app.UseGoogleAuthentication(new GoogleOAuth2AuthenticationOptions()
-            //{
-            //    ClientId = "",
-            //    ClientSecret = ""
-            //});
+            app.UseGoogleAuthentication(new GoogleOAuth2AuthenticationOptions()
+            {
+                ClientId = "992507342327-7pmpfucpn37nf45unbckdk7oke9sqd78.apps.googleusercontent.com",
+                ClientSecret = "sipoGvcr_e96eNya3hRCjcFk"
+            });
         }
     }
 }

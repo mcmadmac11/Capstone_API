@@ -16,10 +16,12 @@ namespace DocuStoreAPI.Models
         // For more information refer to the documentation:
         // http://msdn.microsoft.com/en-us/data/jj591621.aspx
 
-        public DocuStoreDBContext() : base("name=DocuStoreAPIContext")
+        public DocuStoreDBContext() : base("name=DocuStoreDBContext")
         {
+            
         }
 
+        
         public System.Data.Entity.DbSet<DocuStoreAPI.Models.Document> Documents { get; set; }
 
         public System.Data.Entity.DbSet<DocuStoreAPI.Data.Member> Members { get; set; }
